@@ -6,7 +6,7 @@ use TravelingKata\GetPossiblyCityPerDay;
 use TravelingKata\GetTravelingRoutes;
 use TravelingKata\Route;
 
-$cityList = file_get_contents('simple.json');
+$cityList = file_get_contents(__DIR__.'/simple.json');
 $possiblyResults = GetPossiblyCityPerDay::execute(json_decode($cityList, true));
 $routes = GetTravelingRoutes::execute($possiblyResults);
 
