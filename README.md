@@ -3,7 +3,8 @@ Coding Traveling Kata
 
 
 # how to execute
- php /var/www/TravelingKata/pub/index.php
+cd TravelingKata
+php pub/index.php
 
 
 # Example Data from:
